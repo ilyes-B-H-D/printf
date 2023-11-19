@@ -11,8 +11,8 @@ int		ft_putstr(char *s);
 int		ft_putchar(char c);
 int		ft_putnbr(int n);
 int		ft_putunbr(unsigned int n);
-int		ft_puthexa(unsigned int i);
-int		ft_putxaddr(unsigned long i);
+int     ft_puthexa(unsigned int i, char *s);
+int		ft_putaddr(unsigned long i);
 int		ft_check(const char *s, va_list ptr);
 
 #endif

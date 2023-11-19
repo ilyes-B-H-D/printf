@@ -1,23 +1,19 @@
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
-int	ft_puthexa(unsigned int i)
+int	ft_puthexa(unsigned int i, char *base)
 {
-	char	*u;
-	char	*l;
 	int		count;
 
 	count = 0;
-	u = "0123456789ABCDEF";
-	l = "0123456789abcdef";
 	if (i < 16)
 	{
-		ft_putchar(l[i]);
+		ft_putchar(base[i]);
 		count++;
 	}
 	else
 	{
-		count += ft_putcaphexa(i / 16);
-		count += ft_putcaphexa(i % 16);
+		count += ft_puthexa(i / 16, base);
+		count += ft_puthexa(i % 16, base);
 	}
 	return (count);
 }

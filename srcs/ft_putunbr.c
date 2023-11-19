@@ -1,4 +1,4 @@
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 int	ft_putunbr(unsigned int k)
 {
@@ -6,7 +6,7 @@ int	ft_putunbr(unsigned int k)
 	int			count;
 
 	count = 0;
-	if (k >= 0 && k <= 9)
+	if (k <= 9)
 	{
 		c = k + 48;
 		write (1, &c, 1);
