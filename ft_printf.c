@@ -6,7 +6,7 @@
 /*   By: iben-haj <iben-haj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 14:43:46 by iben-haj          #+#    #+#             */
-/*   Updated: 2023/11/19 14:43:47 by iben-haj         ###   ########.fr       */
+/*   Updated: 2023/11/19 16:29:39 by iben-haj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,10 @@ int	ft_printf(const char *str, ...)
 	va_end(ptr);
 	return (len);
 }
+// int main()
+// {
+// 	ft_printf("%x", 0xFFFFF);
+// 	ft_printf("%X", 0xFFFFF);
+// 	ft_printf("%x", 0xFFFFF);
+// 	ft_printf("%X", 0xFFFFF);
+// }
